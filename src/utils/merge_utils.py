@@ -11,7 +11,7 @@ import numpy as np
 import re
 from collections import OrderedDict
 from src.utils.analysis_utils import *
-from transformers import AutoModelForSeq2SeqLM
+from transformers import AutoModelForSeq2SeqLM, AutoModel
 import torch.nn.functional as F
 
 logger = logging.getLogger("root")
@@ -32,8 +32,8 @@ BASIC_INFORMATION = {
         "dump_dir": f"",
         "load_dir": f"",
     },
-    "vit-large-14" : {
-        "base_model" : "vit-large-14", 
+    "openai/clip-vit-large-patch14" : {
+        "base_model" : "openai/clip-vit-large-patch14", 
         "dump_dir" : r"C:\Users\Jake\ties-merging\vision_dump_dir", 
         "load_dir" : r"C:\Users\Jake\ties-merging\vision_load_dir",
     },
@@ -618,6 +618,7 @@ def load_t5(merging_tasks, model_key, pretrained_state_dict):
 
 
 def load_vit(merging_tasks, model_key):
+    
 
     dump_dir = BASIC_INFORMATION[model_key]["dump_dir"]
     base_model = BASIC_INFORMATION[model_key]["base_model"]

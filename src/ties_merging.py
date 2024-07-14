@@ -2,6 +2,7 @@ import sys, os
 
 print(f"Current working directory: {os.getcwd()}")
 sys.path.insert(0, os.getcwd())
+sys.path.append(os.path.join(os.getcwd(), "src"))
 
 
 import wandb
@@ -53,7 +54,6 @@ from src.utils.utils import (
     setup_wandb_logger,
 )
 from src.utils.merge_utils import *
-
 logger = logging.getLogger("root")
 
 
@@ -134,6 +134,8 @@ def merge_and_evalaute(
         )
         
     elif "vit" in config_toInit.pretrained_model:
+        sys.path.append(os.path.join(os.getcwd(), "src"))
+
         (
             tv_flat_checks,
             flat_ptm,

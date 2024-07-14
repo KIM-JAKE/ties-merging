@@ -1,0 +1,69 @@
+2024-07-14 16:55:50,626 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:55:50,627 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:55:50,628 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 16:58:14,267 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:58:14,267 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:58:14,271 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:01:44,076 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:04:06,694 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:04:06,694 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:04:06,697 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:04:17,697 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:15:13,263 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:15:13,265 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:15:13,267 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:15:24,530 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:24:26,235 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:24:26,236 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:24:26,237 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:24:36,008 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:25:26,661 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:25:26,663 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:25:26,665 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:25:34,598 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:28:16,980 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:28:16,981 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:28:16,982 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:28:25,015 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:29:58,368 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:29:58,368 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:29:58,370 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:30:07,134 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:30:31,836 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:30:31,836 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:30:31,838 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:30:38,911 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:34:17,709 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:34:17,709 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:34:17,711 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:34:27,069 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:38:58,782 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:38:58,784 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:38:58,786 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:39:08,427 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:41:19,103 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:41:19,104 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:41:19,106 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:41:28,073 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:42:37,644 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:42:37,644 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:42:37,646 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:42:46,558 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:46:36,431 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:46:36,432 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:46:36,434 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:46:45,739 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:48:33,892 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:48:33,893 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:48:33,894 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:48:42,762 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:56:58,481 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 17:56:58,481 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 17:56:58,483 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 17:57:08,394 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 17:57:10,287 - torch.distributed.nn.jit.instantiator - [INFO] - Created a temporary directory at C:\Users\Jake\AppData\Local\Temp\tmpy7xxw87q
+2024-07-14 18:00:54,725 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 18:00:54,725 - root - [INFO] - python ./src/ties_merging.py -c configs/vit_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 18:00:54,726 - root - [INFO] - Loading pretrained model and tokenizer for openai/clip-vit-large-patch14
+2024-07-14 18:01:03,707 - root - [INFO] - Loading Checkpoints for Merging: openai/clip-vit-large-patch14
+2024-07-14 18:01:04,474 - torch.distributed.nn.jit.instantiator - [INFO] - Created a temporary directory at C:\Users\Jake\AppData\Local\Temp\tmpyuv32i3o

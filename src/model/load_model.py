@@ -5,7 +5,7 @@ import copy
 import re
 from collections import OrderedDict
 
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModel
 
 from src.data.dataset_mixtures import get_datasetMixture
 
@@ -32,8 +32,6 @@ def construct_model(
     model_config=None,
 ):
     """
-
-
     Args:
         model_name:
         peft_method:
@@ -46,7 +44,13 @@ def construct_model(
         tokenizer:
     """
     logger.info(f"Loading pretrained model and tokenizer for {pretrainedModel_name}")
-    transformer = AutoModelForSeq2SeqLM.from_pretrained(pretrainedModel_name)
+    
+    # Use AutoModel for CLIP model and AutoModelForSeq2SeqLM for others
+    if "clip" in pretrainedModel_name:
+        transformer = AutoModel.from_pretrained(pretrainedModel_name)
+    else:
+        transformer = AutoModelForSeq2SeqLM.from_pretrained(pretrainedModel_name)
+        
     tokenizer = AutoTokenizer.from_pretrained(
         pretrainedModel_name, model_max_length=max_sequenceLength
     )

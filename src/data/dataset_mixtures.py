@@ -34,13 +34,14 @@ T5_MIXTURE = ["anli-r1", "anli-r2", "anli-r3", "paws", "qasc", "quartz", "story_
 T5_MIXTURE = ["paws", "qasc", "quartz", "story_cloze", "wiki_qa", "winogrande", "wsc"]
 
 VISION_MIXTURE = ["cars",
-    "dtd",
-    "eurosat",
-    "gtsrb",
-    "mnist",
-    "resisc45",
-    "sun397",
-    "svhn"]
+    "dtd",]
+
+    # "eurosat",
+    # "gtsrb",
+    # "mnist",
+    # "resisc45",
+    # "sun397",
+    # "svhn"]
 
 DATASET_MIXTURES = {
     "eight_qa": EIGHT_QA_DATASETS,
