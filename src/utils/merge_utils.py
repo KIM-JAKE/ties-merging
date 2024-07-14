@@ -20,7 +20,7 @@ BASIC_INFORMATION = {
     "bigscience/T0_3B": {
         "base_model": "bigscience/T0_3B",
         "dump_dir": f"",
-        "load_dir": f"",
+        "load_dir": f"",    
     },
     "t5-base": {
         "base_model": "t5-base",
@@ -31,6 +31,11 @@ BASIC_INFORMATION = {
         "base_model": "t5-large",
         "dump_dir": f"",
         "load_dir": f"",
+    },
+    "vit-large-14" : {
+        "base_model" : "vit-large-14", 
+        "dump_dir" : r"C:\Users\Jake\ties-merging\vision_dump_dir", 
+        "load_dir" : r"C:\Users\Jake\ties-merging\vision_load_dir",
     },
 }
 

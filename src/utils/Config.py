@@ -32,10 +32,10 @@ class Config(object):
         for k, v in dict_toUpdateFrom.items():
             try:
                 # For strings that are actually filepaths, literal eval will fail so we have to ignore
-                # strings which are filepaths. We check a string is a filepath if a "/" is in string.
-                if not (isinstance(v, str) and "/" in v):
+                # strings which are filepaths. We check a string is a filepath if a "/" or "\" is in string.
+                if not (isinstance(v, str) and ("/" in v or "\\" in v)):
                     v = ast.literal_eval(v)
-            except ValueError:
+            except (ValueError, SyntaxError):
                 v = v
 
             if hasattr(self, k):

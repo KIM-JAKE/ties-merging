@@ -132,6 +132,26 @@ def merge_and_evalaute(
             config_toInit.pretrained_model,
             pretrained_state_dict=model.state_dict(),
         )
+        
+    elif "vit" in config_toInit.pretrained_model:
+        (
+            tv_flat_checks,
+            flat_ptm,
+            flat_ft,
+            ft_checks,
+            ptm_check,
+            merging_tasks,
+            dump_dir,
+            remove_keys,
+            reshape_keys,
+            base_model,
+            load_dir,
+            filepaths,
+        ) = load_vit(
+            all_mixing_datasets,
+            config_toInit.pretrained_model,
+        ) 
+        
     else:
         raise ValueError(
             f"Merging not implemented for model: {config_toInit.pretrained_model}"

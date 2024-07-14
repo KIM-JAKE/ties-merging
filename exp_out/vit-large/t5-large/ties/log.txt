@@ -1,0 +1,9 @@
+2024-07-14 16:04:42,879 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:04:42,880 - root - [INFO] - python ./src/ties_merging.py -c configs/t5_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:17:20,128 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:17:20,129 - root - [INFO] - python ./src/ties_merging.py -c configs/t5_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:18:03,913 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:18:03,914 - root - [INFO] - python ./src/ties_merging.py -c configs/t5_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:20:20,285 - root - [INFO] - Starting Experiments of Model merging
+2024-07-14 16:20:20,286 - root - [INFO] - python ./src/ties_merging.py -c configs/t5_large.json -i vision_mixture -m vision_mixture -f topk20_mass_dis-mean_linear+0.8+2.51+0.1 --kwargs split=validation project_name=vit-large experiment_name=ties
+2024-07-14 16:20:20,287 - root - [INFO] - Loading pretrained model and tokenizer for t5-large

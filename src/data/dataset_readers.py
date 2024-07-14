@@ -17,12 +17,12 @@ class DatasetReader(object):
     DatasetReader objects reads dataset and has all attributes specific to dataset
     """
 
-    def __init__(self, dataset_stash, template_stash):
+    def __init__(self, dataset_stash, template_stash=None):
 
         self.dataset_stash = dataset_stash
         self.template_stash = template_stash
 
-        self.all_templates = self._get_datasetTemplates(None, None)
+        self.all_templates = self._get_datasetTemplates(None, None) if template_stash else []
 
         self.cached_origData = {}
         self.cached_datasets = {}
@@ -36,11 +36,7 @@ class DatasetReader(object):
         Returns:
 
         """
-
-        if self.few_shot_random_seed is not None:
-            return self._read_few_shot_dataset(split, self.few_shot_random_seed)
-        else:
-            return self._read_origin_dataset(split)
+        return self._read_origin_dataset(split)
 
     def _read_origin_dataset(self, split):
         """
@@ -83,34 +79,6 @@ class DatasetReader(object):
                 self.cached_origData["test"] = orig_test_data
             else:
                 self.cached_origData[split] = orig_data
-
-        return self.cached_origData[split]
-
-    def _read_few_shot_dataset(
-        self,
-        split,
-        few_shot_random_seed,
-    ):
-        if split not in self.cached_origData:
-            logger.info(
-                f"\t\tLoading Few Shot Data for {self.name} with seed {few_shot_random_seed}"
-            )
-            file_path = os.path.join(
-                "data",
-                "few_shot",
-                self.name,
-                f"{few_shot_random_seed}_seed.jsonl",
-            )
-            if os.path.exists(file_path):
-                with open(file_path, "r") as fin:
-                    data = []
-                    for idx, line in enumerate(fin.readlines()):
-                        example = json.loads(line.strip("\n"))
-                        example["lbl"] = int(example["label"])
-                        data.append(example)
-                    self.cached_origData[split] = data
-            else:
-                raise ValueError(f"Few shot dataset not found at {file_path}")
 
         return self.cached_origData[split]
 
@@ -1020,6 +988,30 @@ class ROPESReader(DatasetReader):
         return super()._get_datasetTemplates([], ["Squad"])
 
 
+class VisionDatasetReader(DatasetReader):
+    def __init__(self, dataset_stash, dataset_kwargs=None):
+        super().__init__(dataset_stash=dataset_stash)
+        if dataset_kwargs:
+            for k, v in dataset_kwargs.items():
+                setattr(self, k, v)
+        self.name = dataset_stash[1]
+
+    def _read_origin_dataset(self, split):
+        if split not in self.cached_origData:
+            logger.info(f"\t\tLoading Full Data for {self.name}")
+            huggingFace_data = load_dataset(
+                *self.dataset_stash,
+                split=split,
+            )
+            orig_data = []
+            for idx, example in enumerate(huggingFace_data):
+                example["idx"] = idx
+                example["lbl"] = int(example["label"])
+                orig_data.append(example)
+            self.cached_origData[split] = orig_data
+        return self.cached_origData[split]
+
+
 DATASET_CLASSES = {
     "rte": RTEReader,
     "h-swag": HSwagReader,
@@ -1040,8 +1032,15 @@ DATASET_CLASSES = {
     "quartz": QuaRTzReader,
     "qasc": QASCReader,
     "ropes": ROPESReader,
+    "cars": VisionDatasetReader,
+    "dtd": VisionDatasetReader,
+    "eurosat": VisionDatasetReader,
+    "gtsrb": VisionDatasetReader,
+    "mnist": VisionDatasetReader,
+    "resisc45": VisionDatasetReader,
+    "sun397": VisionDatasetReader,
+    "svhn": VisionDatasetReader,
 }
-
 
 def get_datasetReader(dataset_name, dataset_kwargs=None):
     return DATASET_CLASSES[dataset_name](dataset_kwargs)
